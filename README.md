@@ -4,13 +4,13 @@
 
 VetDD is a veterinary disease reference application designed for students and professionals in the veterinary field. It provides structured, section-by-section information on over 150 animal diseases — covering causes, clinical signs, gross pathology, pathophysiology, diagnosis, and more.
 
-This repository is where the veterinary community can contribute peer-reviewed feedback to improve the accuracy and depth of disease information displayed in the app.
+This repository is where members of the public can contribute feedback to improve the accuracy and depth of disease information displayed in the app.
 
 ---
 
 ## How This Repo Works
 
-Each disease in VetDD has its own Markdown file inside the `diseases/` folder. The file is named after the disease (lowercase, hyphen-separated), for example:
+Each disease in VetDD has its own Markdown file inside the `diseases/` folder above (in this repositry). The file is named per the disease name in all lowercase, with a hyphen instead of a space, for example:
 
 - `diseases/botulism.md`
 - `diseases/foot-and-mouth-disease.md`
@@ -19,10 +19,10 @@ Each disease in VetDD has its own Markdown file inside the `diseases/` folder. T
 Each file contains the same set of sections that appear in the app. The initial content is marked as:
 
 ```
-Initial: Content shown in the app is initial content from launch
+Initial: Content shown in the app is from launch
 ```
 
-Feedback lines are added **below** the initial line (or below previous feedback lines) within the relevant section.
+For uders submitting feedback, feedback lines are added **below** the initial line (or below previous feedback lines) within the relevant section.
 
 ---
 
@@ -71,21 +71,28 @@ Format your feedback as follows:
 ### Clinical Signs
 Initial: Content shown in the app is initial content from launch
 15 April 2026: Add dysphagia and ascending paralysis in cattle cases (Acha & Szyfres, Zoonoses, 3rd ed.)
-16 April 2026: Change "salivation" → "hypersalivation with inability to swallow" (OIE Technical Disease Card – Rabies)
+16 April 2026: Change "salivation" → "hypersalivation with inability to swallow" (Source as a link)
 ```
 
 ### Step 4 — Submit a Pull Request
 
 Once you have made your changes:
 
-1. Commit your changes with a clear message, e.g. `"Feedback: Rabies – Clinical Signs update"`
+1. Commit your changes with a clear message indicating the diseaes where edits were suggested and the sections in that disease to which an edit was suggested.
+    For example: `"Rabies – Clinical Signs"`. 
+    If you have made suggestions to multiple diseases, in your message, use a new line per (disease & section) to ensure clarity. Example:
+    `"Rabies - Clinical Signs"`
+    `"Rabies - Pathophysiology"`
+    Be sure to copy this message's text as we will need it again in step 6 below.
 2. Push the commit to your fork
 3. Navigate back to the **original** `anon2348/vetdd-feedback` repository
 4. Click **New Pull Request** and select your fork as the source branch
-5. Provide a brief description of your changes in the PR description
+5. Provide a brief description of your changes in the PR description (You can simply paste the same content from step 1 above)
 6. Submit the Pull Request
 
-A maintainer will review your feedback, verify sources, and merge accepted changes.
+A maintainer will review your feedback, verify sources, and merge acceptable changes.
+To ensure you suggestion is rapidly and promptly accepted, it is advisable to ensure the sources are provided as links. 
+In the end-deployment to the app, should a change be accepted, the source for that change will be cited as per an academic standard appropriate to the UI of the app and, the source added to the "Relevant Acadamic Journal/Article" section of the app.
 
 ---
 
@@ -93,11 +100,11 @@ A maintainer will review your feedback, verify sources, and merge accepted chang
 
 | Rule | Detail |
 |------|--------|
-| **Never remove previous lines** | All feedback lines must be preserved. Only add new lines below existing ones. |
+| **Never remove previous lines** | All previous feedback lines must be preserved, even if you disagree with the feedback. Only add new lines below existing ones. |
 | **Always date your line** | Use the format `DD Month YYYY:` at the start of every feedback line (e.g. `15 April 2026:`). |
-| **Always include a source** | Every feedback line must reference a credible source in parentheses at the end — e.g. a textbook, journal article, or official guideline. |
-| **One disease per PR** | Keep each Pull Request focused on a single disease file to make review easier. |
-| **Be specific** | Use `Change ___ → ___` for corrections and `Add ___` for new information. Avoid vague comments. |
+| **Always include a source** | Every feedback line must reference a credible source in parentheses at the end — e.g. a textbook, journal article, or official guideline. Links are preferred to expedite verifiability. |
+| **Be specific in each feedback point** | Use `Change ___ → ___` for corrections and `Add ___` for new information. Avoid vague comments. |
+| **Be specific in in the commit message and pull request message** | The commit message helps act as a traceability point for the suggestion being made whilst the pull request message helps the maintainer of the app promptly review your suggestions. |
 
 ---
 
@@ -105,14 +112,10 @@ A maintainer will review your feedback, verify sources, and merge accepted chang
 
 When a Pull Request is reviewed and merged by a maintainer:
 
-1. The feedback line is committed to the disease file in this repository
-2. The accepted content is transposed into the VetDD app
-3. The app reflects the updated, peer-reviewed information
+1. The feedback line is committed to the disease file in this repository - publicly verifiable.
+2. The accepted content is transposed into the VetDD app - privcately conducted, results are public.
+3. The app reflects the updated information.
 
-Your contribution directly improves what veterinary students and professionals see in the app.
+Your contribution directly improves what veterinary students and professionals see in the app and we thank you for your contribution.
 
 ---
-
-## Questions?
-
-If you have questions about the feedback process, open an [Issue](../../issues) in this repository.
