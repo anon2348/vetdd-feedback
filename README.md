@@ -22,7 +22,17 @@ Each file contains the same set of sections that appear in the app. The initial 
 Initial: Content shown in the app is from launch
 ```
 
-For uders submitting feedback, feedback lines are added **below** the initial line (or below previous feedback lines) within the relevant section.
+For users submitting feedback, feedback lines are to be added **below** the initial line or below previous feedback lines within the relevant section.
+
+### Tip for researchers & academics:
+
+If you wish to be credited for your contributions outside the scope of VetDD, be sure to link your Github profile with ORCID. 
+
+To do this, navigate to your [profile settings](https://github.com/settings/profile) → Scroll down to "ORCID iD" → [Connect your ORDID iD](https://github.com/settings/orcid_connection/new). 
+
+More details on ORCID are avaialble here: https://info.orcid.org/what-is-orcid/. 
+
+_Please note: How ORCID handles & reflects the correlation is outside the scope of our operations._
 
 ---
 
@@ -42,11 +52,11 @@ Follow these steps to contribute feedback on any disease section:
 
 ### Step 1 — Fork the Repo
 
-Click the **Fork** button at the top right of this page to create your own copy of the repository.
+Click the **Fork** button at the top right of this page to create a synced copy of the repository for yourself.
 
 ### Step 2 — Navigate to the Disease File
 
-In your fork, open the `diseases/` folder and find the `.md` file for the disease you want to review.
+In your fork, open the `diseases/` folder and find the `.md` file for the disease you wish to provide feedback for.
 
 For example, to give feedback on *Rabies*, open `diseases/rabies.md`.
 
@@ -58,12 +68,12 @@ Format your feedback as follows:
 
 **To suggest a change:**
 ```
-15 April 2026: Change ___ → ___ (source)
+Change ___ → ___ (source)
 ```
 
 **To add new information:**
 ```
-15 April 2026: Add ___ (source)
+Add ___ (source)
 ```
 
 **Example:**
@@ -79,20 +89,27 @@ Initial: Content shown in the app is initial content from launch
 Once you have made your changes:
 
 1. Commit your changes with a clear message indicating the diseaes where edits were suggested and the sections in that disease to which an edit was suggested.
-    For example: `"Rabies – Clinical Signs"`. 
-    If you have made suggestions to multiple diseases, in your message, use a new line per (disease & section) to ensure clarity. Example:
+    
+    For example: `"Rabies – Clinical Signs"`
+    
+    If you have made suggestions to multiple diseases or multiple sections in one disease, in your message, use a new line per (disease & section) to ensure clarity.
+    
+    Example: 
+    
     `"Rabies - Clinical Signs"`
-    `"Rabies - Pathophysiology"`
-    Be sure to copy this message's text as we will need it again in step 6 below.
+    
+    `"Rabies - Pathophysiology"` 
+    
+    Be sure to copy this message's text as it will be needed again in step 6 below.
 2. Push the commit to your fork
 3. Navigate back to the **original** `anon2348/vetdd-feedback` repository
 4. Click **New Pull Request** and select your fork as the source branch
 5. Provide a brief description of your changes in the PR description (You can simply paste the same content from step 1 above)
 6. Submit the Pull Request
 
-A maintainer will review your feedback, verify sources, and merge acceptable changes.
-To ensure you suggestion is rapidly and promptly accepted, it is advisable to ensure the sources are provided as links. 
-In the end-deployment to the app, should a change be accepted, the source for that change will be cited as per an academic standard appropriate to the UI of the app and, the source added to the "Relevant Acadamic Journal/Article" section of the app.
+A maintainer will review your feedback, verify sources, and merge changes.
+To ensure your suggestion is promptly accepted, it is advisable to provide the sources are as a publicly accesible link.
+In the end-deployment to the app, should a change be accepted, the source for that change will be cited as per an academic standard appropriate to the UI of the app and, the source will be added to the "Relevant Acadamic Journal/Article" section of the app.
 
 ---
 
