@@ -1,8 +1,10 @@
 # VetDD Feedback Repository
 
+   > Please note there is a "navigation" button on the top right of this page's header for you to navigate to the section you wish to read.
+
 ## What is VetDD?
 
-VetDD is a veterinary disease reference application designed for students and professionals in the veterinary field. It provides structured, section-by-section information on over 150 animal diseases — covering causes, clinical signs, gross pathology, pathophysiology, diagnosis, and more.
+VetDD is a veterinary disease reference application designed for students and professionals in the veterinary field. It provides categorised, section-by-section information on over 100 animal diseases — covering causes, clinical signs, gross pathology, pathophysiology, diagnosis, and more.
 
 This repository is where members of the public can contribute feedback to improve the accuracy and depth of disease information displayed in the app.
 
@@ -46,13 +48,15 @@ All disease files are stored alphabetically in the `diseases/` folder. You can:
 
 ---
 
-## How to Submit Feedback
+## How to Submit Feedback for existing diseases
 
-Follow these steps to contribute feedback on any disease section:
+Follow these steps to contribute feedback on any existing diseases:
 
 ### Step 1 — Fork the Repo
 
-Click the **Fork** button at the top right of this page to create a synced copy of the repository for yourself.
+Click the **Fork** button at the top right of this page to create a copy of the repository for yourself.
+
+If you have already created a fork of the repository, before submitting additional feedback, be sure to press "Sync fork" in your forked copy before doing the next steps. This ensure you are editing the latest version of the repo.
 
 ### Step 2 — Navigate to the Disease File
 
@@ -84,15 +88,16 @@ Initial: Content shown in the app is initial content from launch
 16 April 2026: Change "salivation" → "hypersalivation with inability to swallow" (Source as a link)
 ```
 
-### Step 4 — Submit a Pull Request
+### Step 4 — Submit the changes
 
-Once you have made your changes:
+Once you have made your changes to a disease page, on the page:
 
-1. Commit your changes with a clear message indicating the diseaes where edits were suggested and the sections in that disease to which an edit was suggested.
+1. Press the green "Commit changes" button at the top right of the page section and ensure it is selected to commit the change to your fork.
+2. Commit your changes with a clear message indicating the diseaes where edits were suggested and the sections in that disease to which an edit was suggested.
     
     For example: `"Rabies – Clinical Signs"`
     
-    If you have made suggestions to multiple diseases or multiple sections in one disease, in your message, use a new line per (disease & section) to ensure clarity.
+    If you have made suggestions to multiple sections in one disease, in your message, use a new line per (disease & section) to ensure clarity.
     
     Example: 
     
@@ -101,13 +106,54 @@ Once you have made your changes:
     `"Rabies - Pathophysiology"` 
     
     Be sure to copy this message's text as it will be needed again in step 6 below.
-2. Push the commit to your fork
-3. Navigate back to the **original** `anon2348/vetdd-feedback` repository
+
+    This is a per disease process. Please do this per disease as you suggest edits to each disease and, be sure to save your commit message per diseae to a notepad/word document to use in step 6 later.
+3. Once you have committed all your suggestions to your forked repository, navigate back to the **original** [`/vetdd-feedback`](https://github.com/anon2348/vetdd-feedback) repository
 4. Click **New Pull Request** and select your fork as the source branch
 5. Provide a brief description of your changes in the PR description (You can simply paste the same content from step 1 above)
 6. Submit the Pull Request
 
 A maintainer will review your feedback, verify sources, and merge changes.
+To ensure your suggestion is promptly accepted, it is advisable to provide the sources are as a publicly accesible link.
+In the end-deployment to the app, should a change be accepted, the source for that change will be cited as per an academic standard appropriate to the UI of the app and, the source will be added to the "Relevant Acadamic Journal/Article" section of the app.
+
+---
+## How to add new diseases
+
+If there is a disease that is not included in the `/diseases/` folder, please follow these steps to add it.
+
+### Step 1 - Fork the repo
+   _same as above_
+
+Click the **Fork** button at the top right of this page to create a copy of the repository for yourself.
+
+If you have already created a fork of the repository, before submitting additional feedback, be sure to press "Sync fork" in your forked copy before doing the next steps. This ensure you are editing the latest version of the repo.
+
+### Step 2 - Copy the template
+
+Navigate to the page [`/template.md`](https://github.com/anon2348/vetdd-feedback/blob/main/template.md) and copy the format of the template
+
+### Step 3 - Create a new page in the main folder
+
+   - In the `/diseases`folder, create a new page
+   - Label this page with the format `[disease].md`
+   - Paste the template text you just copied into the page section
+   - Edit each section in the page as specified
+   
+### Step 4 - Submit the changes
+   _similar to above_
+
+   1. Press the green "Commit changes" button on the top right of the new disease page entry created. There is no need to detail each section where information has been added, simply type `New Disaese added: [Disease name]` as the commit message.
+
+      This is a per-page commit so, if you have multiple diseases to add, create all the new disease entries you wish to have uploaded by repeating **Step 2** and **Step 3** above for each disease.
+      
+   2. Push the commit to your fork
+   3. Navigate back to the **original** [`/vetdd-feedback`](https://github.com/anon2348/vetdd-feedback) repository
+   4. Click **New Pull Request** and select your fork as the source branch
+   5. Detail what the new disaese added is in the Pull Request message. This can be the same as the `New Disaese added: [Disease name]` from above.
+   6. Submit the Pull Request
+
+A maintainer will review your addition, verify sources, and merge changes.
 To ensure your suggestion is promptly accepted, it is advisable to provide the sources are as a publicly accesible link.
 In the end-deployment to the app, should a change be accepted, the source for that change will be cited as per an academic standard appropriate to the UI of the app and, the source will be added to the "Relevant Acadamic Journal/Article" section of the app.
 
