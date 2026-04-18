@@ -159,11 +159,12 @@ You will receive a notification in Github about the status of your suggestion.
 
 | Rule | Detail |
 |------|--------|
-| **Never remove previous lines** | All previous feedback lines must be preserved, even if you disagree with the feedback. Only add new lines below existing ones. |
+| **Review ongoing feedback first** | Before creating a feedback submission, navigate to the "Pull requests" tab above to view ongoing feedback. Do not submit feedback for a disesae that may have a feedback backlog item pending review. |
+| **Never remove previous lines** | All previous feedback lines must be preserved. Only add new lines below existing ones. |
 | **Always date your line** | Use the format `DD Month YYYY:` at the start of every feedback line (e.g. `15 April 2026:`). |
 | **Always include a source** | Every feedback line must reference a credible source in parentheses at the end — e.g. a textbook, journal article, or official guideline. Links are preferred to expedite verifiability. |
-| **Be specific in each feedback point** | Use `Change ___ → ___` for corrections and `Add ___` for new information. Avoid vague comments. |
-| **Be specific in in the form message** | The commit message helps act as a traceability point for the suggestion being made whilst the pull request message helps the maintainer of the app promptly review your suggestions. |
+| **Be specific in each feedback point** | Use `Change ___ → ___` for corrections and `Add ___` for new information. Avoid vague comments/long sentences. |
+| **Be specific in in the form message** | The commit message helps act as a traceability point for the suggestion being made whilst the pull request message helps the maintainer of the app promptly review your suggestions. Please do add both. |
 
 
 Your contribution directly improves what veterinary students and professionals see in the app and we thank you for your contribution.
